@@ -17,6 +17,7 @@
 body{
     background-color: var(--color-primario);
     color: var(--color-secundario);
+    
 }
 
 .header{
@@ -47,6 +48,7 @@ body{
     justify-content: space-between;
     gap: 82px;
     flex-direction: column;
+    padding-bottom:50px;
 }
 
 .main_contenido{
@@ -76,9 +78,17 @@ body{
 
 .main_imagen{
     width: 31.25rem;
+    padding: 3%;
 }
 
+.main_videos_lista{
+    justify-content: space-between;
+    
+}
 
+h2{
+    padding: 5%;
+}
 
 
 .footer{
@@ -88,5 +98,27 @@ body{
     text-align: center;
     font-family: var(--fuente-principal);
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 25rem;
+    
+        
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+     }
+    
+    .main{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .main_contenido_parrafo{
+        width: auto;
+    }
+
 }
